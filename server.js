@@ -8,7 +8,7 @@ var smtpConfig = {
     secure: true, // use SSL
     auth: {
         user: 'green.heaven.london@gmail.com',
-        pass: 'Gr33nh34v3n'
+        pass: 'Gr33nh34v3n2'
     },
     tls: {
         rejectUnauthorized: false
@@ -47,6 +47,6 @@ app.post('/api/send_query',function(req,res){
 })
 
 
-app.listen(3000, function () {
-  console.log('Example app listening on port 3000!');
+app.listen(3111, function () {
+  console.log('Example app listening on port 3111!');
 })

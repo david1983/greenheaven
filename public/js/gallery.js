@@ -89,9 +89,9 @@ document.addEventListener('touchend', function(e) {
     }
 
     if(length - move>0){
-      next();
+      prev();
     }else{
-      prev();          
+      next();          
     }
     length=0, xstartPos=0,move=0;
     
