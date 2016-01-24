@@ -77,12 +77,13 @@
 					</div></div>
 				</div>	
 				<div class="row">
-					<div class="col-6">
+					<div class="col-6" id="contact-details">
 						<div class="box">
 							<h2>Contact Details</h2>
 							<div class="row contact-element">
-								<h3>Location</h3><br><br>
-								<address style="background:lightgrey;padding:1em">
+								<h3 >Location</h3>
+								<address >
+								
 									<div class="row">
 										<div class="col-3"><b>Address: </b> </div>
 										<div class="col-9">111, Westbury Avenue</div>
@@ -99,27 +100,17 @@
 									
 								</address>
 
-<div id="map" style="width:100%;height:400px"></div>
-	    <script type="text/javascript">
-
-	var map;
-	function initMap() {
-	  map = new google.maps.Map(document.getElementById('map'), {
-	    center: {lat: 51.5956284, lng: -0.0955005},
-	    zoom: 15
-	  });
-	}
-
-	    </script>
-
+								<div id="map" style="width:100%;height:400px"></div>
 
 							</div>
 
 							
 
 							<div class="row contact-element">
-								<h3>Contacts</h3><br><br>
+							<h3>Contacts</h3>
 
+							<address>
+								
 								<div class="row">
 									<div class="col-3"><b>Phone: </b></div>
 									<div class="col-9"> <a href="tel:07473778189">+44 0747 377 8189</a></div>
@@ -128,7 +119,7 @@
 									<div class="col-3"><b>Email: </b></div>
 									<div class="col-9"> <a href="mail:info@greenheaven.com">info@greenheaven.com</a></div>
 								</div>
-								
+							</address>
 							</div>
 						</div>
 					</div>
@@ -157,8 +148,8 @@
 									<textarea name="message" placeholder="Message" required></textarea>	
 								</div>
 								<div class="row contact-element">
-									<button type="submit"> Send message </button>
-									<button type="reset" onclick="reset()"> Reset form </button>
+									<div class="col-6"><div class="box"><button type="submit"> Send message </button></div></div>
+									<div class="col-6"><div class="box"><button type="reset" onclick="reset()"> Reset form </button></div></div>
 									<i class="fa fa-circle-o-notch fa-spin" id="spinner"></i>
 								</div>
 								<div class="row contact-element" id="error-msg"></div>

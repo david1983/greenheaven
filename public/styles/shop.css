@@ -15,7 +15,7 @@
 
 
 
-/* Product modal */
+/* modal */
 
 .modalDialog {
     position: fixed;    
@@ -75,6 +75,16 @@
     background: #31AF43;
 }
 
+
+/* cart modal */
+#cartModal table {
+	width:100%;
+}
+
+
+
+/* product list*/
+
 .product-box, .category-box{
 	transition:all 1s;
 	cursor:pointer;			
@@ -108,6 +118,13 @@ article{
 	padding:3em 0;
 }
 
+.product-header{	
+	line-height:4;	
+	text-align:right;
+}
+
+
+/*media queries for this page only */
 
 @media (min-width:680px){
 	.category-box:hover img, .product-box:hover  img{
@@ -154,9 +171,6 @@ article{
 		opacity:1;
 	}
 
-
-
-
 }
 
 
@@ -169,13 +183,9 @@ article{
 		padding:1em;
 		width:100%;
 	}
+
+	#cartModal > div{
+		padding:0;
+	}
 }
 
-	.product-header{	
-		line-height:4;	
-		text-align:right;
-	}
-	.product-header button,b{		
-		margin:1em!important;
-		width:90%;
-	}

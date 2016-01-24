@@ -170,7 +170,7 @@ table tbody{
 	background: #eee
 }
 
-table thead{
+table thead, table tfoot{
 	background:#999;
 	color:#fff;
 }
@@ -190,6 +190,7 @@ input{
     cursor:pointer;
     text-decoration: none;
     transition:all 0.5s;
+    width: 100%
 }
 
 input[type="number"],input[type="text"],input[type="tel"],input[type="email"]{
@@ -207,7 +208,7 @@ input:focus{
 
 .btn:hover, .btn:focus, input[type=button]:hover, input[type=button]:focus, button:hover, button:focus{
 	background:#7AC74F;
-	border:none;
+	border:none;	
 }
 
 #error-ie8{

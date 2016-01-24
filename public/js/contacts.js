@@ -44,3 +44,13 @@ $(document).ready(function(){
 		$('#error-msg').css('opacity',0);
 	})
 })
+
+
+
+	var map;
+	function initMap() {
+	  map = new google.maps.Map(document.getElementById('map'), {
+	    center: {lat: 51.5956284, lng: -0.0955005},
+	    zoom: 15
+	  });
+	}

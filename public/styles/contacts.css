@@ -2,6 +2,17 @@
 	padding:1em 0;
 }
 
+
+h3{
+	background:#ddd;
+	padding:1em;
+}
+
+#contact-details address{
+	background:#eee;padding:1em
+}
+
+
 textarea{
 	font-family: Helvetica;
 	width:98%;

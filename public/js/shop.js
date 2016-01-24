@@ -127,7 +127,7 @@ function renderProducts(){
 
 
 function closeProductModal(){
-	$('.modalDialog').toggleClass('openModal')
+	$('#openModal').toggleClass('openModal')
 }
 
 //a regExp is used to handle currency notation
@@ -154,7 +154,7 @@ function revealProductModal(id){
 			$('#quantity').val(0);			
 			var qty = (typeof checkCartQty(id) == 'undefined') ? 0 : checkCartQty(id);
 			$('#inCart').html(qty);
-			$('.modalDialog').addClass('openModal')
+			$('#openModal').addClass('openModal')
 		}
 	};
 }
@@ -179,6 +179,23 @@ function selectCategory(categoryName){
 	}
 	products = newProducts;
 	renderProducts();
+}
+
+function openCart(){
+	var tbody = $('#cartModal #tableBody')
+	tbody.html('');
+	var cart = JSON.parse(localStorage.getItem('cart'));    	
+	if(typeof cart == 'undefined' || cart == null) return 0;
+	for(var i=0; i<cart.length; i++){
+		var cartProduct = cart[i]
+		var trow = "<tr><td>" + cartProduct.product.title + "</td><td>" + cartProduct.qty + "</td><td>" + cartProduct.product.price + "</td></tr>"
+		tbody.append(trow)
+	}
+	$('#cartModal').addClass('openModal')
+}
+
+function closeCartModal(){
+	$('#cartModal').removeClass('openModal')	
 }
 
 
@@ -299,7 +316,8 @@ if(typeof(Storage) !== "undefined") {
 		}
 		console.log(cartTotal)
 		$('#cartTotal').html(currency(cartTotal))
-	}
+		$('#tableTotal').html(currency(cartTotal))
+	}	
 
 } else {
     console.warn('Sorry your browser doesn\'t support localStorage' );
