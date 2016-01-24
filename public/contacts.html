@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<!--[if lt IE 9]>
+			<script src="/js/libs/html5shiv.min.js"></script>
+			<![endif]-->
+			<title>Green Heaven - Home</title>
+			<!--[if lt IE 9]>
+			  <link rel="stylesheet" type="text/css" href="/styles/ie8-and-down.css" />
+			<![endif]-->
+
+			<!--[if gt IE 8]>
+				<!-- CSS for hamburger menu -->
+				<link rel="stylesheet" href="/styles/main.css">
+				<link rel="stylesheet" href="/styles/grid.css">
+				<link rel="stylesheet" href="/styles/contacts.css">
+
+				<link rel="stylesheet" href="/styles/hamburger-icon.css">
+
+				<!-- media queries css -->
+				<link rel="stylesheet" media="screen and (max-width:680px)" href="/styles/small.css" />
+				<link rel="stylesheet" media="screen and (min-width:680px) and (max-width:1024px)" href="/styles/medium.css" />			
+				<link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/large.css" />
+
+			<![endif]-->
+
+			<!-- External library for handling font-icons -->
+			<link rel="stylesheet" href="/styles/css/font-awesome.min.css">
+
+
+			<!-- Prefixfree is a polyfill that allow current browsers to recognise the unprefixed versions of several CSS3 properties -->
+			<script src="/js/libs/prefixfree.min.js"></script>
+			
+			<!-- Javascript libraries inclusion -->
+			<script type="text/javascript" src="/js/libs/jquery-1.12.0.min.js"></script>			
+			<script type="text/javascript" src="/js/app.js"></script>
+			<script type="text/javascript" src="/js/contacts.js"></script>
+
+			<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body>
+		<div id="header" class="no-margin">
+			
+			<div class="row" id="navigation">			
+				<div class="col-2 mobile-nav">
+					<img id="logo" src="/images/greenfarmlogo.png" alt="green farm logo">
+					<h2 id="nav-title">Green Heaven</h2>
+					 <div class="hide-medium hide-large">
+						 <div id="hamburger-icon">
+							 <span></span>
+							 <span></span>
+							 <span></span>
+						 </div>		
+					 </div>					
+				</div>
+
+				<div class="col-10 mobile-menu">							
+					<nav>
+						<ul>
+							<li class="active"><a href="contacts.html">Contacts</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li><a href="restaurant.html">Restaurant</a></li>
+							<li><a href="index.html">Home</a></li>
+						</ul>
+					</nav>	
+				</div>
+				
+			</div>
+		</div>		
+		<div id="page">
+			<div id="wrapper-960">
+				<div class="row">
+					<div class="col-12" style="text-align:center;"><div class="box">
+						<h1>Contacts</h1>
+					</div></div>
+				</div>	
+				<div class="row">
+					<div class="col-6">
+						<div class="box">
+							<h2>Contact Details</h2>
+							<div class="row contact-element">
+								<h3>Location</h3><br><br>
+								<address style="background:lightgrey;padding:1em">
+									<div class="row">
+										<div class="col-3"><b>Address: </b> </div>
+										<div class="col-9">111, Westbury Avenue</div>
+									</div>
+									<div class="row">
+										<div class="col-3"><b>Town: </b></div>
+										<div class="col-9"> London</div>
+									</div>
+									<div class="row">
+										<div class="col-3"><b>Postcode: </b>  </div>
+										<div class="col-9">N22 6RY</div>
+									</div>
+									
+									
+								</address>
+
+<div id="map" style="background:red;width:100%;height:400px"></div>
+	    <script type="text/javascript">
+
+	var map;
+	function initMap() {
+	  map = new google.maps.Map(document.getElementById('map'), {
+	    center: {lat: 51.5956284, lng: -0.0955005},
+	    zoom: 15
+	  });
+	}
+
+	    </script>
+
+
+							</div>
+
+							
+
+							<div class="row contact-element">
+								<h3>Contacts</h3><br><br>
+
+								<div class="row">
+									<div class="col-3"><b>Phone: </b></div>
+									<div class="col-9"> <a href="tel:07473778189">+44 0747 377 8189</a></div>
+								</div>
+								<div class="row">
+									<div class="col-3"><b>Email: </b></div>
+									<div class="col-9"> <a href="mail:info@greenheaven.com">info@greenheaven.com</a></div>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="box">
+							<h2>Contact Form</h2>
+							<form action="api/send_query" method="POST">
+								<div class="row contact-element">
+								<label for="first_name">First name</label>
+								<input type="text" name="first_name" placeholder="First name" required>	
+								</div>
+								<div class="row contact-element">
+								<label for="last_name">Last name</label>
+								<input type="text" name="last_name" placeholder="Last name" required><br>	
+								</div>
+								<div class="row contact-element">
+								<label for="email">Email</label>
+								<input type="email" name="email" placeholder="Email" required><br>	
+								</div>
+								<div class="row contact-element">
+								<label for="phone">First name</label>
+								<input type="tel" name="phone" placeholder="Phone number"><br>	
+								</div>
+								<div class="row contact-element">
+									<label for="Message">Message</label><br><br>
+									<textarea name="message" placeholder="Message" required></textarea>	
+								</div>
+								<div class="row contact-element">
+									<input type="submit" value="send message">
+								</div>
+								
+								
+								
+								
+								
+							</form>
+						</div>
+					</div>
+				</div>						
+			</div>
+		</div>	
+		<div id="footer">
+			<div class="row">
+				<div class="col-4 col-sm-2">
+					<div class="box">
+					<h2>Address</h2><br>
+					<address >
+						<div class="row footer-row">
+							<div class="col-3"><b>Address: </b> </div>
+							<div class="col-9">111, Westbury Avenue</div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Town: </b></div>
+							<div class="col-9"> London</div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Postcode: </b>  </div>
+							<div class="col-9">N22 6RY</div>
+						</div>
+						
+						
+					</address>
+
+
+					</div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="box">
+					<h2>Contacts</h2><br>
+						<div class="row footer-row">
+							<div class="col-3"><b>Phone: </b></div>
+							<div class="col-9"> <a href="tel:07473778189">+44 0747 377 8189</a></div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Email: </b></div>
+							<div class="col-9"> <a href="mail:info@greenheaven.com">info@greenheaven.com</a></div>
+						</div>
+					</div>
+				</div>
+
+						
+	  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDltrPVGY6D_FgWJa0WrhkvRV1-OZ-h1mg&callback=initMap"
+	  type="text/javascript"></script>
+
+				<div class="col-4">
+					<div class="box">
+					<h2>Social</h2><br>
+						<div class="social">
+							<i class="fa fa-facebook-square"></i>
+							<i class="fa fa-twitter-square"></i>	
+							<i class="fa fa-instagram"></i>	
+							<i class="fa fa-google-plus-square"></i>	
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<!--[if lt IE 9]>
+			<script src="/js/libs/html5shiv.min.js"></script>
+			<![endif]-->
+			<title>Green Heaven - Home</title>
+			
+			<!--[if lt IE 9]>
+			  <link rel="stylesheet" type="text/css" href="/styles/ie8-and-down.css" />
+			<![endif]-->
+
+			<!--[if gt IE 8]>
+				<!-- CSS for hamburger menu -->
+				<link rel="stylesheet" href="/styles/main.css">
+				<link rel="stylesheet" href="/styles/grid.css">
+
+				<link rel="stylesheet" href="/styles/hamburger-icon.css">
+
+				<!-- media queries css -->
+				<link rel="stylesheet" media="screen and (max-width:680px)" href="/styles/small.css" />
+				<link rel="stylesheet" media="screen and (min-width:680px) and (max-width:1024px)" href="/styles/medium.css" />			
+				<link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/large.css" />
+
+			<![endif]-->
+
+			<!-- External library for handling font-icons -->
+			<link rel="stylesheet" href="/styles/css/font-awesome.min.css">
+
+			<!-- Prefixfree is a polyfill that allow current browsers to recognise the unprefixed versions of several CSS3 properties -->
+			<script src="/js/libs/prefixfree.min.js"></script>
+			
+			<!-- Javascript libraries inclusion -->
+			<script type="text/javascript" src="/js/libs/jquery-1.12.0.min.js"></script>
+			<script type="text/javascript" src="/js/libs/moment.js"></script>
+			<script type="text/javascript" src="/js/app.js"></script>
+			<script type="text/javascript" src="/js/restaurant.js"></script>
+
+			<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	</head>
+
+	<body>		
+		<div id="header" class="no-margin">
+			
+			<div class="row clearfix" id="navigation">			
+				<div class="col-2 mobile-nav">
+					<img id="logo" src="/images/greenfarmlogo.png" alt="green farm logo">
+					<h2 id="nav-title">Green Heaven</h2>
+					 <div class="hide-medium hide-large">
+						 <div id="hamburger-icon">
+							 <span></span>
+							 <span></span>
+							 <span></span>
+						 </div>		
+					 </div>					
+				</div>
+
+				<div class="col-10 mobile-menu">							
+					<nav>
+						<ul>
+							<li><a href="contacts.html">Contacts</a></li>
+							<li><a href="gallery.html">Gallery</a></li>
+							<li><a href="shop.html">Shop</a></li>
+							<li class="active"><a href="restaurant.html">Restaurant</a></li>
+							<li><a href="index.html">Home</a></li>
+						</ul>
+					</nav>	
+				</div>
+				
+			</div>
+		</div>		
+		<div id="page">
+			<div id="wrapper-960" class="fixed-page">
+				<div class="row">					
+					<div class="col-8">
+						<div class="box">
+							<h1>Green Heaven</h1>
+							<h3>Family restaurant</h3>
+							<br>
+							Sitting just behind the farm we have our restaurant venue wich, back in the 1800, was a stable for horses.<br>
+							Inspired by great artisanal foods of the world. We craft all of our stocks, sauces, breads, pastries and ice creams from scratch on a daily basis, 
+							You will be delighted by amazing dishes prepared by our italian chef Davide.
+						</div>
+					</div>
+					<div class="col-4" >
+						<div class="box">
+							<img src="/images/restaurant.jpg" alt="vegetables from our fields">
+						</div>
+					</div>
+				</div>	
+				<br>		
+				<div class="row" style="text-align:center">
+					<h2>Timetable</h2>
+					<h3>Opening Time</h3>							
+					<div class="col-12 hide-medium hide-large" style="padding-top:2em">
+						<div class="box" style="overflow:auto">
+						<table width="100%"> 
+							<thead>
+								<tr>
+									<th colspan="2">Monday to Friday</th>					
+								</tr>
+								<tr>
+									<th>Morning</th>
+									<th>evening</th>					
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>10:00 - 15:00</td>									
+									<td>17:00 - 23:00</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+					<br><br>
+					<div class="col-12 hide-medium hide-large">
+						<div class="box" style="overflow:auto">
+						<table width="100%"> 
+							<thead>
+								<tr>
+									<th colspan="2">Saturday and Sunday</th>					
+								</tr>
+								<tr>
+									<th>Morning</th>
+									<th>evening</th>					
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>11:00 - 14:00</td>									
+									<td>18:00 - 24:00</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+					
+					
+					<div class="col-12 hide-small">
+						<div style="overflow:auto">
+						<table width="100%"> 
+							<thead>
+								<tr>
+									<th>Monday</th>
+									<th>Tuesday</th>
+									<th>Wednesday</th>
+									<th>Thursday</th>
+									<th>Friday</th>
+									<th>Saturday</th>
+									<th>Sunday</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr id="morning">
+									<td>10:00 - 15:00</td>
+									<td>10:00 - 15:00</td>
+									<td>10:00 - 15:00</td>
+									<td>10:00 - 15:00</td>
+									<td>10:00 - 15:00</td>
+									<td>11:00 - 14:00</td>
+									<td>11:00 - 14:00</td>
+								</tr>
+								<tr id="evening">
+									<td>17:00 - 23:00</td>
+									<td>17:00 - 23:00</td>
+									<td>17:00 - 23:00</td>
+									<td>17:00 - 23:00</td>
+									<td>17:00 - 23:00</td>
+									<td>18:00 - 24:00</td>
+									<td>18:00 - 24:00</td>
+								</tr>
+							</tbody>
+						</table>
+						</div>
+					</div>
+				</div>
+				<br>
+				<h3 class="box" style="text-align:center" id="statemessage">At the moment we are closed but we will open in 45 minutes</h3>
+				
+				<div class="row" style="padding:4em 0">
+					<div class="col-5">
+						<div class="box">
+							<img src="/images/steak.jpg" alt="a juicy steak">
+						</div>
+					</div>
+					<div class="col-7">
+						<div style="padding:0 1em">
+							<h1>Green Heaven Menu</h1>
+							<br>
+							Our food is sourced from top quality seasonal ingredients, featuring a high percentage of local and organic products. Our menu changes every six to eight weeks, offering a mix of new and signature dishes, honoring many different cooking traditions and interpreting them with our unique creative vision.
+							<br><br><br>
+							<a class="btn" href="/download/menu.pdf">Download Menu</a>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>	
+
+		<div id="footer">
+			<div class="row">
+				<div class="col-4 col-sm-2">
+					<div class="box">
+					<h2>Address</h2><br>
+					<address >
+						<div class="row footer-row">
+							<div class="col-3"><b>Address: </b> </div>
+							<div class="col-9">111, Westbury Avenue</div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Town: </b></div>
+							<div class="col-9"> London</div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Postcode: </b>  </div>
+							<div class="col-9">N22 6RY</div>
+						</div>
+						
+						
+					</address>
+					</div>
+				</div>
+				<div class="col-4 col-sm-2">
+					<div class="box">
+					<h2>Contacts</h2><br>
+						<div class="row footer-row">
+							<div class="col-3"><b>Phone: </b></div>
+							<div class="col-9"> <a href="tel:07473778189">+44 0747 377 8189</a></div>
+						</div>
+						<div class="row footer-row">
+							<div class="col-3"><b>Email: </b></div>
+							<div class="col-9"> <a href="mail:info@greenheaven.com">info@greenheaven.com</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-4">
+					<div class="box">
+					<h2>Social</h2><br>
+						<div class="social">
+							<i class="fa fa-facebook-square"></i>
+							<i class="fa fa-twitter-square"></i>	
+							<i class="fa fa-instagram"></i>	
+							<i class="fa fa-google-plus-square"></i>	
+						</div>	
+					</div>
+				</div>
+			</div>
+		</div>	
+	</body></html>

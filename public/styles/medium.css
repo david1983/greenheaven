@@ -1,0 +1,26 @@
+body{
+	background:orange;
+}
+
+.hide-medium{
+	display:none;
+}
+
+#title{
+	font-size:4em;
+}
+
+
+#wrapper-960 .fixed-page{
+	padding:3em 1em;
+}
+
+#footer .box{
+	width:auto;
+	padding:2%;
+  	
+}
+
+.col-md-6{
+	width: 50%;
+}

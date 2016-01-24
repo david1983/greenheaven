@@ -1,0 +1,216 @@
+*{
+	letter-spacing:1px;
+	margin:0;
+}
+
+html body{
+	padding:0;
+	margin:0;
+	height:100%;
+	color:#333;
+	background:#efe;
+	font-family: Helvetica, OpenSans;
+}
+
+img{
+	max-width:100%;
+}
+
+
+#header{
+	z-index:2;	
+	margin-top:400px;	
+	width:100%;
+	background:#ffffff;	
+}
+
+.no-margin{
+	margin-top:0!important;
+}
+
+
+#page{	
+	z-index:1;		
+	background:#E0F3DD;
+	display: block;
+	overflow:hidden;
+	clear: both;
+	max-width:100%;		
+}
+
+
+#footer{	
+	font-size:0.8em;
+	padding:1em;
+	z-index:1;	
+	display: block;
+	overflow:hidden;
+	clear: both;
+	max-width:100%;
+	background:#777;	
+}
+
+.footer-row{
+	margin-bottom:0.2em;
+}
+
+.social{
+	/*font-size:2em;	*/
+}
+
+.social i{	
+	font-size:2em;
+	color:#fff;
+	padding-right:0.5em;
+}
+
+#footer .box{
+	color:#fff;
+	padding:1em;
+}
+
+
+
+/* Navigation styling */
+
+#logo{
+	padding:7px;
+	width:50px;
+}
+
+
+#navigation{
+	height:64px;
+	margin-bottom: 0;
+	border-bottom:2px solid #31AF43;
+	background:white;
+}
+
+#navigation [class*='col-']{
+	padding-bottom: 0;
+}
+
+#nav-title{
+	opacity:0;
+	display:inline;
+	position:absolute;
+	padding:0.7em 0.4em;
+	transition:opacity 1s;	
+}
+
+.open{
+	opacity:1!important;
+}
+
+nav{	
+	letter-spacing: 0;
+	text-align:right;
+}
+
+nav ul{
+	padding:0;
+}
+
+nav ul li{			
+	float:right;
+	height:100%;
+	padding:1em;
+	margin:0;
+	list-style: none;
+	transition: all 0.5s;
+}
+
+nav ul li a{	
+	letter-spacing: 0;
+	line-height: 2;
+	padding:2em 0.7em;	
+	width:100%;
+	height:100%;
+	color: #003;
+	text-decoration: none;
+	
+}
+
+nav ul li:hover, .active{ 
+	background:#31AF43;
+}
+
+nav ul li:hover a, .active a{ 
+	color:#FFF!important;	
+}
+
+
+p{
+	padding:1em;
+}
+
+.fixed-nav{
+	position:fixed!important;
+	top:0;
+	width:100%;
+	z-index:99;
+}
+
+.fixed-page{
+	height:100%;
+	padding-top:80px!important;
+}
+
+
+/* table styling */
+
+table{
+	border-collapse: collapse;
+}
+table td,th{
+	padding: 0.5em;
+}
+
+table tbody{
+	background: #eee
+}
+
+table thead{
+	background:#999;
+	color:#fff;
+}
+
+/* Input styling */
+
+input{
+	transition:all 0.5s;
+}
+
+.btn , input[type=button], button{
+	color: #fff;
+    background: #31AF43;
+    padding: 1em;
+    border: none;
+    border-radius: 5px;	
+    cursor:pointer;
+    text-decoration: none;
+    transition:all 0.5s;
+}
+
+input[type="number"],input[type="text"],input[type="tel"],input[type="email"]{
+	padding: 1em;
+    border: none;
+    width: 100%;
+	border-bottom:1px solid #728469;	
+	transition:all 0.1s;
+}
+
+input:focus{
+	outline:none;
+	border-bottom: 3px solid #7AC74F;
+}
+
+.btn:hover, .btn:focus, input[type=button]:hover, input[type=button]:focus, button:hover, button:focus{
+	background:#7AC74F;
+	border:none;
+}
+
+#error-ie8{
+	display:none;
+}
+

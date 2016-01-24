@@ -1,0 +1,9 @@
+[
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"23:00"}},
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"23:00"}},
+	{"morning":{"open":"02:00","close":"10:00"},"evening":{"open":"18:00","close":"23:00"}},
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"23:00"}},
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"23:00"}},
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"24:00"}},
+	{"morning":{"open":"10:00","close":"15:00"},"evening":{"open":"18:00","close":"24:00"}}
+]
