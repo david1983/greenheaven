@@ -234,7 +234,7 @@ if(typeof(Storage) !== "undefined") {
 		if(typeof(id) == "undefined" || id==null) { return console.warn('ID is required');}		
 			var cart;
 			//checking if a cart is already stored in the localStorage. If not crate an empty cart
-		    if(typeof localStorage.getItem('cart') == 'undefined') { 
+		    if(typeof localStorage.getItem('cart') == 'undefined' || localStorage.getItem('cart')==null) { 
 		    	cart = []
 	    	}else{
 	    		cart = localStorage.getItem('cart');
@@ -256,7 +256,7 @@ if(typeof(Storage) !== "undefined") {
 		    }
 
 		    //we use a spotting variable to see if the product is already in the cart.
-			var found = false;
+			var found = false;			
 			for(var i=0; i<cart.length; i++){
 				if(found==true) continue;
 				if(cart[i].product.id == id){
