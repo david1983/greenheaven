@@ -157,7 +157,7 @@
 						<div class="col-2"><h2>Products</h2></div>
 						<div class="col-10" style="text-align:right">
 							
-							<div class="col-6 product-header"><B>YOUR TOTAL: &pound<span id="cartTotal">0.00</span></B> &nbsp&nbsp</div>
+							<div class="col-6 product-header"><B>YOUR TOTAL: &pound;<span id="cartTotal">0.00</span></B> &nbsp;&nbsp;</div>
 							<div class="col-3 product-header"><div class="box"><BUTTON onclick="cartReset()"><i class="fa fa-trash-o"></i> RESET YOUR CART</BUTTON></div></div>
 							<div class="col-3 product-header"><div class="box"><BUTTON onclick="openCart()"><i class="fa fa-shopping-cart"></i> GO TO CART</BUTTON></div></div>
 							
@@ -224,8 +224,8 @@
 
 		    			<h2 id="product-title">Modal Box</h2>		       
 				        <p id="product-description" class="hide-small">You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p>
-				        <p class="hide-medium hide-large">&nbsp</p>
-				        <h3 style="text-align:right">Price: &pound <span id="product-price"></span></h3>
+				        <p class="hide-medium hide-large">&nbsp;</p>
+				        <h3 style="text-align:right">Price: &pound; <span id="product-price"></span></h3>
 		    		</div>
 		    		<div class="col-6 col-sm-2" style="text-align:center">
 		    			<img id="product-img" src="#" alt="vegetables from our fields">
@@ -249,14 +249,12 @@
 	    			<div class="box"><h2>This is your cart</h2></div>
 	    			<br>
 	    			<table >
-	    				<thead>	    					
+	    				<thead>
 	    					<th>Product</th>
 	    					<th>Quantity</th>
 	    					<th>Price</th>
 	    				</thead>
-	    				<tbody id="tableBody">
-	    					
-	    				</tbody>
+	    				<tbody id="tableBody"></tbody>
 	    				<tfoot>
 	    					<td colspan="2" style="text-align:right">Total</td>
 	    					<td id="tableTotal"></td>
