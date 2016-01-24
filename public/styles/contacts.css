@@ -8,5 +8,10 @@ textarea{
 	height:150px;
 }
 
+#error-msg{ color:red;}
+#success{ color:green;}
 
-
+#error-msg, #success{
+	opacity:0;
+	transition:all 1s;
+}

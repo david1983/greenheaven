@@ -8,7 +8,7 @@ var smtpConfig = {
     secure: true, // use SSL
     auth: {
         user: 'green.heaven.london@gmail.com',
-        pass: 'Gr33nh34v3n2'
+        pass: 'Gr33nh34v3n'
     },
     tls: {
         rejectUnauthorized: false

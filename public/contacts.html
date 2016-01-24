@@ -135,7 +135,7 @@
 					<div class="col-6">
 						<div class="box">
 							<h2>Contact Form</h2>
-							<form  id="contactForm" name="contactForm" action="api/send_query"  method="POST">
+							<form  id="contactForm" name="contactForm" action="api/send_query" method="POST">
 								<div class="row contact-element">
 								<label for="first_name">First name</label>
 								<input type="text" name="first_name" placeholder="First name" required>	
@@ -158,10 +158,11 @@
 								</div>
 								<div class="row contact-element">
 									<button type="submit"> Send message </button>
-									<button type="reset"> Reset form </button>
+									<button type="reset" onclick="reset()"> Reset form </button>
 									<i class="fa fa-circle-o-notch fa-spin" id="spinner"></i>
 								</div>
-								
+								<div class="row contact-element" id="error-msg"></div>
+								<div class="row contact-element" id="success">Your message has been sent</div>
 								
 								
 								
