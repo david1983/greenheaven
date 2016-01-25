@@ -46,4 +46,28 @@ $(document).ready(function(){
 	    center: {lat: 51.5956284, lng: -0.0955005},
 	    zoom: 15
 	  });
+
+	  var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Green Heaven</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Green Heaven</b> is one of London\'s largest and longest established city farms.</p>'+      
+      '</div>'+
+      '</div>';
+
+	  var infowindow = new google.maps.InfoWindow({
+	    content: contentString
+	  });
+
+	   var marker = new google.maps.Marker({
+	    position: map.center,
+	    map: map,
+	    title: 'Green Heaven Farm'
+	  });
+
+	 marker.addListener('click', function() {
+	    infowindow.open(map, marker);
+	  });
+
 	}
