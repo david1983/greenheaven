@@ -5,7 +5,8 @@ var originalProducts = [
 		title: 'Boston lettuce',
 		price: 0.5,
 		description: ' It\'s got as complex a flavor as you\'ll find in any lettuce. It has a pronounced crisp garden freshness balanced by just a touch of bitterness. The velvety texture that sets Boston apart from its coarser lettuce cousins earns its entry into the "butterhead" lettuce category.',
-		category: 'vegetables'
+		category: 'vegetables',
+		season: [1,1,1,1]
 	},
 	{
 		id: 2,
@@ -13,7 +14,8 @@ var originalProducts = [
 		title: 'Spinach',
 		price: 0.2,
 		description: 'Fresh spinach has a clean, crisp taste with a light sharpness that fits beautifully in rich dishes made with eggs and cheeses.',
-		category: 'vegetables'
+		category: 'vegetables',
+		season: [0,1,1,0]
 	},
 	{
 		id: 3,
@@ -21,7 +23,8 @@ var originalProducts = [
 		title: 'Beefsteak Tomatoes',
 		price: 0.56,
 		description: 'Heavy, fleshy, and versatile, we can bring you these tangy, sturdy, almost smoky-flavored tomatoes all through the year. In Italy they serve layers of sliced beefsteaks, fresh mozzarella, and whole basil leaves, with a drizzle of good olive oil and a little balsamic vinegar',
-		category: 'vegetables'
+		category: 'vegetables',
+		season: [1,1,1,0]
 	},
 	{
 		id: 4,
@@ -29,7 +32,8 @@ var originalProducts = [
 		title: 'Plum tomatoes',
 		price: 2,
 		description: 'Roma tomatoes are the ultimate Italian variety plum tomato. They\'re bright red in color, smooth skinned and oval shaped. ',
-		category: 'vegetables'
+		category: 'vegetables',
+		season: [0,1,1,0]
 	},
 	{
 		id: 5,
@@ -37,7 +41,8 @@ var originalProducts = [
 		title: 'Green seedless grape',
 		price: 1.5,
 		description: 'Juicy and snappy, with a beautiful balance of sweet and tart. This is the grape that all others are compared to. ',
-		category: 'fruit'
+		category: 'fruit',
+		season: [0,0,1,1]
 	},
 	{
 		id: 6,
@@ -45,7 +50,8 @@ var originalProducts = [
 		title: 'Fuji Apples',
 		price: 1,
 		description: 'There\'s a hint of sweet vanilla in this baseball-sized apple. Originally grown in Japan, the Fuji ripens slowly and is a challenge to pick.',
-		category: 'fruit'
+		category: 'fruit',
+		season: [1,1,0,1]
 	},
 	{
 		id: 7,
@@ -53,7 +59,8 @@ var originalProducts = [
 		title: 'Oranges',
 		price: 1,
 		description: 'This grapefruit\'s watermelon-colored flesh is tart and sweet, with a big flavor. It is full of juice, with barely any bitterness.',
-		category: 'fruit'
+		category: 'fruit',
+		season: [1,0,0,1]
 	},
 	{
 		id: 8,
@@ -61,7 +68,8 @@ var originalProducts = [
 		title: 'Blueberries',
 		price: 1,
 		description: 'Smooth-skinned, perfect little globes of fresh, juicy flavor, mostly sweet and a little tart. ',
-		category: 'fruit'
+		category: 'fruit',
+		season: [1,1,1,0]
 	},
 	{
 		id: 9,
@@ -69,7 +77,8 @@ var originalProducts = [
 		title: 'Gorgonzola Dolce',
 		price: 1,
 		description: 'A rich and creamy version of the northern Italian classic blue. Gorgonzola Dolce is young and sweet (as the name suggests).',
-		category: 'cheese'
+		category: 'cheese',
+		season: [1,1,0,1]
 	}
 ]
 
@@ -80,6 +89,7 @@ var originalProducts = [
 
 $(document).ready(function(){
 	renderProducts();
+	renderReapeningTable();
 	if(Storage){
 		checkTotal();
 	}
@@ -97,7 +107,23 @@ function cloneArray(arraySrc, arrayDst){
 }
 
 
+function renderReapeningTable(){
+	var table = $('#tbody');	
+	for(var i = 0 ; i<products.length; i++){
+		var product = products[i];
 
+		var row = '<tr><td>'+product.title+'</td>';
+		for(var n=0;n<product.season.length;n++){
+			if(product.season[n]==1){
+				row += '<td class="available">Available</td>'
+			}else{
+				row += '<td class="not-available">Not available</td>'
+			}				
+		}
+		
+		table.append(row + '</tr>')	
+	}
+}
 
 /**
 *	renderProducts cycle the product and append a the productTemplate to the

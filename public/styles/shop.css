@@ -108,6 +108,17 @@ article{
 }
 
 
+.available{
+	background:green;
+	color:white;
+}
+
+.not-available{
+	background:red;
+	color:white;
+}
+
+
 /*media queries for this page only */
 
 @media (min-width:680px){
