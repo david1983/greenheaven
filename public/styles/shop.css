@@ -11,10 +11,6 @@
 	width:100%;
 }
 
-
-
-
-
 /* modal */
 
 .modalDialog {
@@ -26,18 +22,14 @@
     background: #888;
     z-index: -1;
     opacity:0;
-    background-color: rgba(128,64,0,0.75);
-    -webkit-transition: opacity 400ms ease-in;
-    -moz-transition: opacity 400ms ease-in;
-    transition: all 400ms ease-in;    
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+    background-color: rgba(128,64,0,0.75);    
+    transition: all 400ms ease-in;        
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 .openModal {
 	z-index: 99999;
     opacity:1;
-    background-color: rgba(0,0,0,0.75);
-    pointer-events: auto;
+    background-color: rgba(0,0,0,0.75);    
     transition: opacity 400ms ease-in;  
 }
 .modalDialog > div {	
@@ -62,12 +54,8 @@
     top: -10px;
     width: 24px;
     text-decoration: none;
-    font-weight: bold;
-    -webkit-border-radius: 12px;
-    -moz-border-radius: 12px;
-    border-radius: 12px;
-    -moz-box-shadow: 1px 1px 3px #000;
-    -webkit-box-shadow: 1px 1px 3px #000;
+    font-weight: bold;    
+    border-radius: 12px;    
     box-shadow: 1px 1px 3px #000;
 }
 

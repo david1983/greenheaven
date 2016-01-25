@@ -62,8 +62,8 @@ p{
 	
 }
 
-.mobile-menu.open{
-    height:450;	
+.mobile-menu .open{
+    height:450px;	
 	max-height:450px;
 	border-top:2px solid #A1CF68;
 }

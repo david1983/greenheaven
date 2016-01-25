@@ -5,52 +5,54 @@
 
 
 .col-1 {
-  width: calc(8.333333333%*1);
+  width: 8.333333333%;
 }
 
 .col-2 {
-  width: calc(8.333333333%*2);
+  width: 16.66666666%;
 }
 
 .col-3 {
-  width: calc(8.333333333%*3);
+  width: 24.99999999%;
 }
 
 .col-4 {
-  width: calc(8.333333333%*4);
+  width: 33.333333332%;
 }
 
 .col-5 {
-  width: calc(8.333333333%*5);
+  width: 41.666666665%;
 }
 
 .col-6 {
-  width: calc(8.333333333%*6);
+  width: 49.999999998%;
 }
 
 .col-7 {
-  width: calc(8.333333333%*7);
+  width: 58.333333331%;
 }
 
 .col-8 {
-  width: calc(8.333333333%*8);
+  width: 66.666666664%;
 }
 
 .col-9 {
-  width: calc(8.333333333%*9);
+  width: 74.999999997%;
 }
 
 .col-10 {
-  width: calc(8.333333333%*10);
+  width: 83.333333333%;
 }
 
 .col-11 {
-  width: calc(8.333333333%*11);
+  width: 91.666666663%;
 }
 
-.col-12 {
-  width: calc(8.333333333%*12);
+.col-12{
+  width: 100%; 
 }
+
+
 .row{	
 	overflow:hidden;
 	display: block;
