@@ -53,18 +53,22 @@ p{
 	padding:1em;
 }
 
+#navigation{
+	height:auto
+}
 
 .mobile-menu{
 	width:100%;
-	max-height: 0;
+	height:0;
+	max-height: 0px;
 	transition: all 0.5s;
 	border-top:1px solid #A1CF68;
 	
 }
 
-.mobile-menu .open{
-    height:450px;	
-	max-height:450px;
+.openMenu{
+    height:320px;	
+	max-height:320px;
 	border-top:2px solid #A1CF68;
 }
 

@@ -5,8 +5,8 @@ $(document).ready(function(){
 
 	// handle of the menu button in the mobile navigation
 	$('#hamburger-icon').click(function(){
-        $(this).toggleClass('open');
-        $('.mobile-menu').toggleClass('open');
+        $(this).toggleClass('openMenu');
+        $('.mobile-menu').toggleClass('openMenu');
     });
 
 
