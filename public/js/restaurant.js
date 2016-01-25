@@ -1,5 +1,4 @@
-var timetable = $.getJSON("/js/json/timetable.json", function(json) {	
-    console.log(json); // this will show the info it in firebug console
+var timetable = $.getJSON("/js/json/timetable.json", function(json) {	    
     var morningTime = $('#morning');
     var eveningTime = $('#evening');
 	
@@ -31,15 +30,12 @@ var timetable = $.getJSON("/js/json/timetable.json", function(json) {
 				open=true
 		    }
 
-		}
-		console.log(str)
+		}		
 		return str	
     }
 
     
-    $(document).ready(function(){
-    	console.log(checkOpen())
-    	console.log($('#statemessage'))
+    $(document).ready(function(){    	
     	$('#statemessage')[0].innerHTML = checkOpen()	
     })
     

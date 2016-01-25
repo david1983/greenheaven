@@ -90,7 +90,10 @@ $(document).ready(function(){
 var products = [];
 cloneArray(originalProducts, products)
 function cloneArray(arraySrc, arrayDst){	
-	arraySrc.forEach(function(p){ arrayDst.push(p)})	
+	for(var i=0;i<arraySrc.length;i++){
+			arrayDst.push(arraySrc[i])
+	}
+		
 }
 
 
@@ -214,8 +217,7 @@ if(typeof(Storage) !== "undefined") {
     	if(typeof cart == 'undefined' || cart == null) return 0;
     	for(var i=0; i<cart.length; i++){
     		if(cart[i].product.id==id){ 
-    			if(typeof cart[i].qty == 'undefined') return 0;
-    			console.log(cart[i])
+    			if(typeof cart[i].qty == 'undefined') return 0;    			
     			return cart[i].qty
     		}
     	}
@@ -313,8 +315,7 @@ if(typeof(Storage) !== "undefined") {
 		for(var i=0;i<cart.length;i++){
 			var cartItem = cart[i];
 			cartTotal += (cartItem.qty*cartItem.product.price);
-		}
-		console.log(cartTotal)
+		}		
 		$('#cartTotal').html(currency(cartTotal))
 		$('#tableTotal').html(currency(cartTotal))
 	}	
@@ -322,3 +323,4 @@ if(typeof(Storage) !== "undefined") {
 } else {
     console.warn('Sorry your browser doesn\'t support localStorage' );
 }
+

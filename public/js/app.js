@@ -22,8 +22,7 @@ $(document).ready(function(){
 		var heroHeight = $('.herobox').height();
 		var scrollVal = $(document).scrollTop()	
 		
-		if(scrollVal>heroHeight){
-			console.log(scrollVal)
+		if(scrollVal>heroHeight){			
 			$('#nav-title').addClass('open');
 			$('#navigation').addClass('fixed-nav');
 			$('#wrapper-960').addClass('fixed-page');
