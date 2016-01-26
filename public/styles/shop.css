@@ -13,6 +13,10 @@
 
 /* modal */
 
+/*
+	the modal dialog is actually the overlay on the page when the modal is open
+	has a black background but the opacity is set as 0.75
+*/
 .modalDialog {
     position: fixed;    
     top: 0;
@@ -25,12 +29,17 @@
     background-color: rgba(128,64,0,0.75);    
     transition: all 400ms ease-in;            
 }
+
 .openModal {
 	z-index: 99999;
     opacity:1;
     background-color: rgba(0,0,0,0.75);    
     transition: opacity 400ms ease-in;  
 }
+
+/*
+	this is the actual class for the modal
+*/
 .modalDialog > div {	
     min-width: 300px;
     width:60%;
@@ -40,6 +49,8 @@
     border-radius: 10px;
     background: #fff;  
 }
+
+
 .close {
     background: #606061;
     color: #FFFFFF;
@@ -61,6 +72,7 @@
 
 
 /* cart modal */
+
 #cartModal table {
 	width:100%;
 }
@@ -107,6 +119,8 @@ article{
 	text-align:right;
 }
 
+
+/* Reapening table */
 
 .available{
 	background:green;

@@ -1,5 +1,8 @@
 
-
+/*
+	The hero box class has a background-image because, in case html5 video
+	is not supported the user can always see a hero image
+*/
 .herobox{
 	display: block;
 	z-index:-1;	
@@ -20,6 +23,11 @@
 .herobox video{
 	width:100%;
 }
+
+/*
+	On the title a shadow is used to simulate a stroke line.
+	a fadeIn animation is also applied.
+*/
 
 #title{
 	opacity:1;
@@ -68,12 +76,7 @@
 
 .services-wrapper .fa{
     width: 100%;
-    font-size: 4em;
-   /* text-shadow: 
-    -1px 1px 1px #21480E,
-    1px -1px 1px #21480E,
-	-1px 1px 1px #21480E,
-    1px -1px 1px #21480E;*/
+    font-size: 4em;   
     color: #7CC370;
     padding: 0.5em 0 0.3em 0;
 }

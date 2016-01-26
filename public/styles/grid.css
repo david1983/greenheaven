@@ -1,8 +1,15 @@
+/*
+  The grid is composed by 12 cells or columns, the width of the cell is calculated as
+  percentage 100/12 = 8.333333333.
+  Every columns is a floating eement, this allows the grid to be compatible with
+  older browsers.
+*/
+
 [class*='col-'] {
   float: left;    
   display: block;
+  position:relative;
 }
-
 
 .col-1 {
   width: 8.333333333%;
@@ -52,7 +59,9 @@
   width: 100%; 
 }
 
-
+/* 
+  the row elements clear the float on both sides acting as a separator
+*/
 .row{	
 	overflow:hidden;
 	display: block;
@@ -79,6 +88,12 @@
 #wrapper-960 .fluid{
   max-width:100%!important;
 }
+
+
+/* 
+  Here we define the rules for the mobile grid, if specified is possible 
+  to use a 4 columns grid in mobile version
+*/
 
 @media (max-width:680px){
   [class*='col-sm-'] {

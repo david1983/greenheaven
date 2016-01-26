@@ -2,9 +2,10 @@ body{
 	background:blue;
 }
 
-#navigation{
-	height:auto;
+.hide-small{
+	display:none;
 }
+
 
 [class*='col-'] {
   width:100%;
@@ -12,10 +13,9 @@ body{
   margin:0;
 }
 
-.hide-small{
-	display:none;
+#navigation{
+	height:auto;
 }
-
 
 nav{	
 	padding:0;

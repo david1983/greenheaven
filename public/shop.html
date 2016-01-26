@@ -19,7 +19,9 @@
 			  <link rel="stylesheet" type="text/css" href="/styles/ie8-and-down.css" />
 			<![endif]-->
 
+
 			<script> 
+				//the library shows to the user a message if the browser is out of date
 				var $buoop = {c:2}; 
 				function $buo_f(){ 
 				 var e = document.createElement("script"); 
@@ -96,11 +98,11 @@
 							The shop features its own in-house bakery, butchers, and delicatessen; featuring fresh artisan breads, homemade cakes, award-winning pies, and quality meats, as well as multi-award-winning range of Welsh cheeses, handmade in our on-site dairy.
 						</p>
 						<p>
-							We provide fresh quality fruits and vegetables, for this reason sometimes not all of our products are available, to be sure you can check the seasonal reapening table down below.
+							We provide fresh quality fruits and vegetables, for this reason sometimes not all of our products are available, to be sure you can check the seasonal ripening table down below.
 						</p>
 						<br>
 						<section id="#reapeningtable" style="overflow:auto;max-width:100%">
-							<h3>Reapening table</h3>
+							<h3>Ripening table</h3>
 							<br>
 							<table>
 								<thead>
@@ -224,15 +226,17 @@
 					<div class="box">
 					<h2>Social</h2><br>
 						<div class="social">
-							<i class="fa fa-facebook-square"></i>
-							<i class="fa fa-twitter-square"></i>	
-							<i class="fa fa-instagram"></i>	
-							<i class="fa fa-google-plus-square"></i>	
-						</div>	
+							<a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+							<a href="http://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+							<a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+							<a href="http://plus.google.com"><i class="fa fa-google-plus-square"></i></a>
 					</div>
 				</div>
 			</div>
+			<div class="row credit">created by Bizzsolution ltd. &copy; 2016</div>
 		</div>	
+
+		</div>
 		<div id="openModal" class="modalDialog">
 		    <div>	
 		    	<a href="#close" title="Close" onclick="closeProductModal()" class="close"><i class="fa fa-times"></i></a>
@@ -253,7 +257,10 @@
 					<div class="col-3" style="line-height:4;text-align:left"><div class="box"></div></div>
 					<div class="col-3" style="line-height:4;text-align:left"><div class="box" id="cart-items">In cart: <span id="inCart"></span></div></div>																			
 					<div class="col-2"><div class="box"><input type="number" id="quantity" min="0" max="50" placeholder="Quantity" required><input type="hidden" id="product_id"></div></div>
-					<div class="col-4"><div class="box"><input type="button" id="addToCartButton" onclick="addToCart()" style="width:100%" value="Add to cart"></div></div>
+					<div class="col-4"><div class="box">
+						<input type="button" id="addToCartButton" onclick="addToCart()" style="width:100%" value="Add to cart">
+						<span class="cookie-message">You need to accept cookie policy to use this feature</span>
+					</div></div>
 				</div>
 		    </div>
 		   
@@ -288,6 +295,17 @@
     				<div class="col-6"><div class="box"><button onclick="closeCartModal()"><i class="fa fa-shopping-cart"></i> CONTINUE SHOPPING</button></div></div>
     			</div>
 		    </div>		   
+		</div>		
+			<div class="cookie-toaster">
+			<div class="box">
+				<h3>This site use cookies</h3>
+				<p>
+					In order to use some advance features you will need to accept storing cookies on your device<br>
+					If you accept we won't show this again.
+				</p>
+			</div>
+			<input type="button" value="I give my consent" onclick="setCookieConsent()">
+			<input type="button" value="I don't give my consent" onclick="closeToaster()">
 		</div>
 
 	</body>

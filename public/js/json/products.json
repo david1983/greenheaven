@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "img": "/images/bostonlettuce.jpg",
+        "title": "Boston lettuce",
+        "price": 0.5,
+        "description": " It's got as complex a flavor as you'll find in any lettuce. It has a pronounced crisp garden freshness balanced by just a touch of bitterness. The velvety texture that sets Boston apart from its coarser lettuce cousins earns its entry into the \"butterhead\" lettuce category.",
+        "category": "vegetables",
+        "season": [
+            1,
+            1,
+            1,
+            1
+        ]
+    },
+    {
+        "id": 2,
+        "img": "/images/spinach.jpg",
+        "title": "Spinach",
+        "price": 0.2,
+        "description": "Fresh spinach has a clean, crisp taste with a light sharpness that fits beautifully in rich dishes made with eggs and cheeses.",
+        "category": "vegetables",
+        "season": [
+            0,
+            1,
+            1,
+            0
+        ]
+    },
+    {
+        "id": 3,
+        "img": "/images/tomatoes.jpg",
+        "title": "Beefsteak Tomatoes",
+        "price": 0.56,
+        "description": "Heavy, fleshy, and versatile, we can bring you these tangy, sturdy, almost smoky-flavored tomatoes all through the year. In Italy they serve layers of sliced beefsteaks, fresh mozzarella, and whole basil leaves, with a drizzle of good olive oil and a little balsamic vinegar",
+        "category": "vegetables",
+        "season": [
+            1,
+            1,
+            1,
+            0
+        ]
+    },
+    {
+        "id": 4,
+        "img": "/images/plumtomatoes.jpg",
+        "title": "Plum tomatoes",
+        "price": 2,
+        "description": "Roma tomatoes are the ultimate Italian variety plum tomato. They're bright red in color, smooth skinned and oval shaped. ",
+        "category": "vegetables",
+        "season": [
+            0,
+            1,
+            1,
+            0
+        ]
+    },
+    {
+        "id": 5,
+        "img": "/images/grape.jpg",
+        "title": "Green seedless grape",
+        "price": 1.5,
+        "description": "Juicy and snappy, with a beautiful balance of sweet and tart. This is the grape that all others are compared to. ",
+        "category": "fruit",
+        "season": [
+            0,
+            0,
+            1,
+            1
+        ]
+    },
+    {
+        "id": 6,
+        "img": "/images/applefuji.jpg",
+        "title": "Fuji Apples",
+        "price": 1,
+        "description": "There's a hint of sweet vanilla in this baseball-sized apple. Originally grown in Japan, the Fuji ripens slowly and is a challenge to pick.",
+        "category": "fruit",
+        "season": [
+            1,
+            1,
+            0,
+            1
+        ]
+    },
+    {
+        "id": 7,
+        "img": "/images/orange1.jpg",
+        "title": "Oranges",
+        "price": 1,
+        "description": "This grapefruit's watermelon-colored flesh is tart and sweet, with a big flavor. It is full of juice, with barely any bitterness.",
+        "category": "fruit",
+        "season": [
+            1,
+            0,
+            0,
+            1
+        ]
+    },
+    {
+        "id": 8,
+        "img": "/images/blueberry.jpg",
+        "title": "Blueberries",
+        "price": 1,
+        "description": "Smooth-skinned, perfect little globes of fresh, juicy flavor, mostly sweet and a little tart. ",
+        "category": "fruit",
+        "season": [
+            1,
+            1,
+            1,
+            0
+        ]
+    },
+    {
+        "id": 9,
+        "img": "/images/gorgonzola.jpg",
+        "title": "Gorgonzola Dolce",
+        "price": 1,
+        "description": "A rich and creamy version of the northern Italian classic blue. Gorgonzola Dolce is young and sweet (as the name suggests).",
+        "category": "cheese",
+        "season": [
+            1,
+            1,
+            0,
+            1
+        ]
+    }
+]

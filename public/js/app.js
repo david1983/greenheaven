@@ -39,4 +39,18 @@ $(document).ready(function(){
 			$('#navigation').addClass('fixed-nav');
 			$('#wrapper-960').addClass('fixed-page');		
 	}	
+
+	if(document.cookie != 'consent=true'){
+		$('.cookie-toaster').addClass('toaster-open')
+	}
 })
+
+
+function closeToaster(){
+	$('.cookie-toaster').toggleClass('toaster-open');
+}
+
+function setCookieConsent(){
+	document.cookie = 'consent=true';
+	$('.cookie-toaster').toggleClass('toaster-open');
+}

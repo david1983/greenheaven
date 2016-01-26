@@ -16,6 +16,10 @@ img{
 	max-width:100%;
 }
 
+#error-ie8{
+	display:none;
+}
+
 
 #header{
 	z-index:2;	
@@ -54,10 +58,6 @@ img{
 	margin-bottom:0.2em;
 }
 
-.social{
-	/*font-size:2em;	*/
-}
-
 .social i{	
 	font-size:2em;
 	color:#fff;
@@ -69,6 +69,41 @@ img{
 	padding:1em;
 }
 
+.credit{
+	padding:0;
+	font-size:0.8em;
+	margin:0!important;	
+	color:white;
+	text-align: center;
+}
+
+.cookie-toaster{
+	position:fixed;
+	width:100%;	
+	color:#fff;
+	z-index:9999;
+	bottom:-300px;
+	opacity:0;
+	background:#31AF43;
+	transition:all 1s;
+}
+
+.cookie-message{
+	text-align:center;
+	font-size:0.8em;
+	color:red;
+	padding:0.4em;
+	display:none;
+}
+
+.cookie-message-open{
+	display: block
+}
+
+.toaster-open{
+	opacity:1;
+	bottom:0;	
+}
 
 
 /* Navigation styling */
@@ -90,12 +125,15 @@ img{
 }
 
 #nav-title{
+	overflow:hidden;
 	opacity:0;
 	display:inline;
 	position:absolute;
 	padding:0.7em 0.4em;
+	min-width: 180px
 	transition:opacity 1s;	
 }
+
 
 .open{
 	opacity:1!important;
@@ -122,7 +160,7 @@ nav ul li{
 nav ul li a{	
 	letter-spacing: 0;
 	line-height: 2;
-	padding:2em 0.7em;	
+	padding:2em 0em;	
 	width:100%;
 	height:100%;
 	color: #003;
@@ -211,7 +249,4 @@ input:focus{
 	border:none;	
 }
 
-#error-ie8{
-	display:none;
-}
 

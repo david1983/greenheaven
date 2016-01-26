@@ -1,30 +1,26 @@
 <!DOCTYPE html>
 <html>
 	<head>
-			<!--[if lt IE 9]>
-			<script src="/js/libs/html5shiv.min.js"></script>
-			<![endif]-->
+
+
+
 			<title>Green Heaven - Home</title>
 
 			<link rel="stylesheet" href="/styles/css/font-awesome.min.css">
-				<link rel="stylesheet" href="/styles/main.css">
-				<link rel="stylesheet" href="/styles/grid.css">
-				<link rel="stylesheet" href="/styles/home.css">
+			<link rel="stylesheet" href="/styles/main.css">
+			<link rel="stylesheet" href="/styles/grid.css">
+			<link rel="stylesheet" href="/styles/home.css">
 
-				<link rel="stylesheet" href="/styles/hamburger-icon.css">
-				<link rel="stylesheet" media="screen and (max-width:680px)" href="/styles/small.css" />
-				<link rel="stylesheet" media="screen and (min-width:680px) and (max-width:1024px)" href="/styles/medium.css" />			
-				<link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/large.css" />
+			<link rel="stylesheet" href="/styles/hamburger-icon.css">
+			<link rel="stylesheet" media="screen and (max-width:680px)" href="/styles/small.css" />
+			<link rel="stylesheet" media="screen and (min-width:680px) and (max-width:1024px)" href="/styles/medium.css" />			
+			<link rel="stylesheet" media="screen and (min-width:1024px)" href="/styles/large.css" />
 
 			
 			<!--[if lt IE 9]>
+			  <script src="/js/libs/html5shiv.min.js"></script>
 			  <link rel="stylesheet" type="text/css" href="/styles/ie8-and-down.css" />
 			<![endif]-->
-
-	
-
-			<!-- External library for handling font-icons -->
-			
 
 			<!-- Prefixfree is a polyfill that allow current browsers to recognise the unprefixed versions of several CSS3 properties -->
 			<script src="/js/libs/prefixfree.min.js"></script>
@@ -52,7 +48,7 @@
 		<div id="header">
 			
 			<div class="row" id="navigation">			
-				<div class="col-2 mobile-nav">
+				<div class="col-4 mobile-nav">
 					<img id="logo" src="/images/greenfarmlogo.png" alt="green farm logo">
 					<h2 id="nav-title">Green Heaven</h2>
 					 <div class="hide-medium hide-large">
@@ -64,7 +60,7 @@
 					 </div>					
 				</div>
 
-				<div class="col-10 mobile-menu">							
+				<div class="col-8 mobile-menu">							
 					<nav>
 						<ul>
 							<li><a href="contacts.html">Contacts</a></li>
@@ -182,14 +178,27 @@
 					<div class="box">
 					<h2>Social</h2><br>
 						<div class="social">
-							<i class="fa fa-facebook-square"></i>
-							<i class="fa fa-twitter-square"></i>	
-							<i class="fa fa-instagram"></i>	
-							<i class="fa fa-google-plus-square"></i>	
+							<a href="http://www.facebook.com"><i class="fa fa-facebook-square"></i></a>
+							<a href="http://www.twitter.com"><i class="fa fa-twitter-square"></i></a>
+							<a href="http://www.instagram.com"><i class="fa fa-instagram"></i></a>
+							<a href="http://plus.google.com"><i class="fa fa-google-plus-square"></i></a>
 						</div>	
 					</div>
 				</div>
 			</div>
+			<div class="row credit">created by Bizzsolution ltd. &copy; 2016</div>
 		</div>	
+		<div class="cookie-toaster">
+			<div class="box">
+				<h3>This site use cookies</h3>
+				<p>
+					In order to use some advance features you will need to accept storing cookies on your device<br>
+					If you accept we won't show this again.
+				</p>
+			</div>
+			<input type="button" value="I give my consent" onclick="setCookieConsent()">
+			<input type="button" value="I don't give my consent" onclick="closeToaster()">
+		</div>
+
 	</body>
 </html>

@@ -10,7 +10,6 @@ body{
 	font-size:4em;
 }
 
-
 #wrapper-960 .fixed-page{
 	padding:3em 1em;
 }
@@ -19,8 +18,4 @@ body{
 	width:auto;
 	padding:2%;
   	
-}
-
-.col-md-6{
-	width: 50%;
 }
