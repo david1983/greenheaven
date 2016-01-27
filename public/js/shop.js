@@ -1,5 +1,14 @@
 
 var originalProducts,products;
+var consent = false;
+
+setInterval(function(){
+	consent = /consent=true/.test(document.cookie);
+	if(!consent){
+		$('#addToCartButton').css('background','lightgrey');
+		$('.cookie-message').addClass('cookie-message-open')
+	}
+},500) 
 //we load the productdatasets from a JSON file
 $.getJSON("/js/json/products.json", function(json) {
 		originalProducts = json
@@ -12,12 +21,7 @@ $.getJSON("/js/json/products.json", function(json) {
 
 		$(document).ready(function(){
 			renderProducts();
-			renderReapeningTable();
-			var consent = document.cookie;
-			if(consent!=='consent=true'){
-				$('#addToCartButton').css('background','lightgrey');
-				$('.cookie-message').addClass('cookie-message-open')
-			}
+			renderReapeningTable();			
 			if(Storage){
 				checkTotal();
 			}
@@ -100,8 +104,7 @@ $.getJSON("/js/json/products.json", function(json) {
 				var product = products[i]
 				if(product.id == id){
 					//checking if the propery name is equal to an ID in the view, if so write the value in the DOM 
-					for(var name in product){	
-					console.log(name)					
+					for(var name in product){							
 						if(name=='price' && typeof product[name].toFixed == 'function') { product[name] = currency(product[name]) }
 						$('#product-' + name).html(product[name])
 					}
@@ -198,7 +201,7 @@ if(typeof(Storage) !== "undefined") {
 	*	@return {number}
 	**/
 	function addToCart(){
-		if(document.cooke != 'consent=true'){ 			
+		if(!consent){ 			
 			return 
 		}
 		//loading the data from the the DOM

@@ -40,10 +40,17 @@ $(document).ready(function(){
 			$('#wrapper-960').addClass('fixed-page');		
 	}	
 
-	if(document.cookie != 'consent=true'){
+})
+
+
+var consent = false;
+
+setInterval(function(){
+	consent = /consent=true/.test(document.cookie);
+	if(!consent){
 		$('.cookie-toaster').addClass('toaster-open')
 	}
-})
+},500) 
 
 
 function closeToaster(){

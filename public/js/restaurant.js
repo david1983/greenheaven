@@ -30,8 +30,7 @@ var timetable = $.getJSON("/js/json/timetable.json", function(json) {
             //open is a spotting variable to check if we already know the state
     		if(open) continue;
 			var todayClosingTime = moment().format('YYYY-MM-DD') + " " + day[name].close;
-		    var todayOpeningTime = moment().format('YYYY-MM-DD') + " " + day[name].open;
-            console.log(todayClosingTime,todayOpeningTime)
+		    var todayOpeningTime = moment().format('YYYY-MM-DD') + " " + day[name].open;            
 
 		    if(moment(time).isSameOrBefore(todayClosingTime) && moment(time).isSameOrAfter(todayOpeningTime)){
 				str = "We are open, but hurry up we are closing in " + moment.duration(moment(todayClosingTime).diff(time)).humanize();
