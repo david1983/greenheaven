@@ -277,7 +277,17 @@ if(typeof(Storage) !== "undefined") {
 		}		
 		$('#cartTotal').html(currency(cartTotal))
 		$('#tableTotal').html(currency(cartTotal))
-	}	
+	}		
+
+
+	//to implement the payCart we should use a service like 
+	//paypal or sagepay toactually send a payment request
+	//to the payment gateway of choice at the moment we show an alert
+	function payCart(){
+			var cart = localStorage.getItem('cart');
+			if(typeof cart == 'undefined' || cart == null){ return;}			
+			alert('feature not available');			
+	}
 
 } else {
     console.warn('Sorry your browser doesn\'t support localStorage' );

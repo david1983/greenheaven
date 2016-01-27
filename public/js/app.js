@@ -43,14 +43,11 @@ $(document).ready(function(){
 })
 
 
-var consent = false;
+consent = /consent=true/.test(document.cookie);
+if(!consent){
+	$('.cookie-toaster').addClass('toaster-open')
+}
 
-setInterval(function(){
-	consent = /consent=true/.test(document.cookie);
-	if(!consent){
-		$('.cookie-toaster').addClass('toaster-open')
-	}
-},500) 
 
 
 function closeToaster(){
