@@ -40,13 +40,15 @@ $(document).ready(function(){
 			$('#wrapper-960').addClass('fixed-page');		
 	}	
 
+	consent = /consent=true/.test(document.cookie);
+	if(!consent){
+		$('.cookie-toaster').addClass('toaster-open')
+	}
+
+
 })
 
 
-consent = /consent=true/.test(document.cookie);
-if(!consent){
-	$('.cookie-toaster').addClass('toaster-open')
-}
 
 
 
